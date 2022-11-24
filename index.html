@@ -18,7 +18,11 @@
   <link rel="icon" href="favicon.ico">
 </head>
 
-<body>
+<body style="background-image: linear-gradient(0deg,
+  rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)
+), url(./imagenes\ e\ iconos/Trama1.png);">
+
   <header>
     <!-- START NAVBAR -->
     <nav class="collapse.navbar-collapse">
@@ -43,7 +47,7 @@
                 style="height: 4.4rem; width: 4.4rem;"></a>
           </div>
 
-          <div class="offcanvas offcanvas-start" style="background-color: rgb(247, 233, 180);" tabindex="-1"
+          <div class="offcanvas offcanvas-start" style="background-color: rgb(137, 88, 76);" tabindex="-1"
             id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
               <img src="./imagenes e iconos/MrBurger Isotipo 01 Artboard 1.png" style="height: 6rem; width: 17rem;"
@@ -53,23 +57,27 @@
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <li class="nav-item container d-flex justify-content-center align-items-center">
-                  <img src="./imagenes e iconos/home.png" alt="" style="height: 2.5rem; width: 2.5rem;">
-                  <a class="nav-link mx-2" aria-current="page" href="#inicio">INICIO</a>
+                <li class="nav-item container d-flex align-items-center">
+                  <img src="./imagenes e iconos/home.png" alt="" style="height: 4rem; width: 4rem;">
+                  <a class="nav-link mx-2 text-white" aria-current="page" href="#inicio">INICIO</a>
                 </li>
-                <li class="nav-item text-center container d-flex justify-content-center align-items-center">
-                  <img src="./imagenes e iconos/where.png" alt="" style="height: 3rem; width: 3rem;">
-                  <a class="nav-link mx-2" href="./pedido.html">¿DÓNDE ESTÁ MI PEDIDO?</a>
+                <li class="nav-item container d-flex align-items-center">
+                  <img src="./imagenes e iconos/Productos.png" alt="" style="height: 4rem; width: 4rem;">
+                  <a class="nav-link mx-2 text-white" href="#productos">PRODUCTOS</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-center" href="#contacto">CONTÁCTANOS</a>
+                <li class="nav-item container d-flex align-items-center">
+                  <img src="./imagenes e iconos/promotions.png" alt="" style="height: 4rem; width: 4rem;">
+                  <a class="nav-link mx-2 text-white" href="#promociones">PROMOCIONES</a>
                 </li>
-                <li class="nav-item text-center">
-                  <a class="nav-link" href="#promociones">PROMOCIONES</a>
+                <li class="nav-item container d-flex align-items-center">
+                  <img src="./imagenes e iconos/where.png" alt="" style="height: 5rem; width: 5rem;">
+                  <a class="nav-link text-white" href="./pedido.html">¿DÓNDE ESTÁ MI PEDIDO?</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-center" href="#productos">PRODUCTOS</a>
+                <li class="nav-item container d-flex align-items-center">
+                  <img src="./imagenes e iconos/contact.png" alt="" style="height: 4rem; width: 4rem;">
+                  <a class="nav-link mx-2 text-white" href="#contacto">CONTÁCTANOS</a>
                 </li>
+
               </ul>
               <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Escriba aquí" aria-label="Search">
@@ -83,7 +91,7 @@
   </header>
   <!-- END NAVBAR -->
 
-  <h2 id="inicio" class="text-white">inicio</h2>
+  <span id="inicio" class="bg-transparent">inicio</span>
 
   <!-- STARTING CAROUSEL -->
   <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 8.6rem; height: 31rem;"
@@ -130,8 +138,8 @@
   </div>
   <!-- END CAROUSEL -->
   <span style="color: white;" id="productos">productos</span>
-  <div class="row my-4">
-    <h1 class="text-center" style="color:rgb(137, 88, 76);">NUESTROS PRODUCTOS</h1>
+  <div class="row mt-4 mb-2 d-flex justify-content-center">
+    <h1 class="text-center" style="color:rgb(241, 156, 6);">NUESTROS PRODUCTOS</h1>
   </div>
 
   <!-- START PRODUCTS -->
@@ -174,7 +182,7 @@
   <section style="background-color: rgb(241, 156, 6); height: 20rem;">
     <div class="container">
       <div class="row">
-        <h1 class="text-center mt-5 mb-3" style="color: rgb(137, 88, 76);">SUSCRIBETE PARA QUE NO TE PIERDAS NADA</h1>
+        <h1 class="text-center mt-5 mb-3" style="color: rgb(250, 250, 250);">SUSCRIBETE PARA QUE NO TE PIERDAS NADA</h1>
       </div>
       <div class="row">
         <span class="text-md-center my-3">Para que estes siempre al día con todas nuestras promociones, lanzamientos y
@@ -208,10 +216,10 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <div class="d-flex flex-column text-center">
-        <h2 class="my-5" style="color: rgb(137, 88, 76);">ENCUÉNTRANOS AQUÍ</h2>
-        <span style="color: rgb(241, 156, 6);"><strong> Dirección Principal:</strong> Calle Falsa 123 <br><br>
+        <h2 class="my-5" style="color: rgb(241, 205, 8);">ENCUÉNTRANOS AQUÍ</h2>
+        <span style="color: rgb(241, 156, 6); font-size: 1.3rem;"><strong> Dirección Principal:</strong> Calle Falsa 123 <br><br>
           <strong>Teléfono:</strong> 12345987 <br><br>
-          <strong id="promociones">Email administración:</strong> direcciongral@mrburguer.com <br>
+          <strong id="promociones">Email administración:<br></strong> direcciongral@mrburguer.com <br>
           <strong>Email atención al cliente:</strong> atencioncliente@mrburguer.com</span>
       </div>
     </div>
@@ -220,15 +228,15 @@
 
   <!-- START PROMOTIONS -->
 
-  <div class="container my-md-4 d-flex align-items-center justify-content-center"
-    style="background-color: rgb(137, 88, 76); height: 5rem;">
-    <h1 class="text-center" style="color: rgb(241, 156, 6);">PROMOCIONES</h1>
+  <div class="container my-md-4 d-flex align-items-center justify-content-center shadow-lg"
+    style="background-color: rgb(137, 88, 76); height: 5rem; border-radius: 15px; border: 4px solid rgb(95, 30, 30)">
+    <h1 class="text-center" style="color: rgb(250, 250, 250);">PROMOCIONES</h1>
   </div>
 
   <div class="container d-flex justify-content-between align-items-center my-5">
 
-    <div class="card text-bg-dark m-2">
-      <img src="./imagenes e iconos/hamburguer2.jpeg" class="card-img" alt="...">
+    <div class="card text-bg-dark m-2 shadow-lg">
+      <img src="./imagenes e iconos/hamburguer2.jpeg" class="card-img opacity-25" alt="...">
       <div class="card-img-overlay">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
@@ -238,7 +246,7 @@
     </div>
 
     <div class="card text-bg-dark m-2">
-      <img src="./imagenes e iconos/hamburguer2.jpeg" class="card-img" alt="...">
+      <img src="./imagenes e iconos/hamburguer2.jpeg" class="card-img opacity-25" alt="...">
       <div class="card-img-overlay">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
@@ -248,7 +256,7 @@
     </div>
 
     <div class="card text-bg-dark m-2">
-      <img src="./imagenes e iconos/hamburguer2.jpeg" class="card-img" alt="...">
+      <img src="./imagenes e iconos/hamburguer2.jpeg" class="card-img opacity-25" alt="...">
       <div class="card-img-overlay">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
@@ -270,11 +278,9 @@
 
         <div class="container d-flex flex-column justify-content-center align-items-center">
           <div>
-            <img src="./imagenes e iconos/Mr Burger Positivo 01 Artboard 1.png" alt="">
+            <img src="./imagenes e iconos/logop.png" alt="" style="height: 4rem; width: 11rem;">
           </div>
           <div class="container text-center my-lg-3">
-            <span style="color: rgb(137, 88, 76);"><strong> Mr.Burguer </strong></span>
-            <br>
             <span>@Todos los derechos reservados</span>
             <br>
             <span>Desarrollado por <a href="#" class="text-decoration-none"> <strong> EduNickDev
@@ -286,11 +292,11 @@
 
           <div class="container d-flex justify-content-center align-items-center">
             <div class="my-lg-3">
-              <a href=""><img src="" alt=""><img src="./imagenes e iconos/iconFB.png" alt=""
+              <a href=""><img src="./imagenes e iconos/iconFB.png" alt=""
                   style="height: 4rem; width: 4rem;"></a>
-              <a href=""><img src="" alt=""><img src="./imagenes e iconos/iconIG.png" alt=""
+              <a href=""><img src="./imagenes e iconos/iconIG.png" alt=""
                   style="height: 4rem; width: 4rem;"></a>
-              <a href=""><img src="" alt=""><img src="./imagenes e iconos/iconWP.png" alt=""
+              <a href=""><img src="./imagenes e iconos/iconWP.png" alt=""
                   style="height: 4rem; width: 4rem;"></a>
             </div>
           </div>
